@@ -1,0 +1,48 @@
+.patient-detail {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+    height: 79vh;
+}
+
+.column-cell {
+  height: 18px;
+  align-items: center;
+}
+
+.chartContainerStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-Index: 2;
+}
+
+.chartBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 设置覆盖层的背景颜色，这里使用半透明黑色 */
+  z-index: 1; /* 设置 z-index 属性，以确保它位于页面上其他元素之上 */
+}
+
+
+
+/* CombinedStaticAndDynamicData 组件的样式，包含两个并排的 StaticData 和 DynamicData */
+.combined-data {
+  display: flex;
+}
+
+/* 使 StaticData 和 DynamicData 等宽 */
+.StaticData, .DynamicData {
+  margin-right: 20px;
+}
+
+
+
+

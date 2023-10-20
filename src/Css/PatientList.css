@@ -1,0 +1,50 @@
+/* PatientList.css */
+
+.patient-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  margin-bottom: 10px;
+  margin-right: 130px;
+}
+
+.ant-table {
+  border: 1px solid #e8e8e8;
+  max-width: 1400px;
+}
+
+.table-search-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  height: 500px; /* 设置容器的高度，根据需要进行微调 */
+  position: relative;
+}
+
+.ant-table-cell {
+  text-align: center;
+}
+
+.search-details-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-details-container .ant-input {
+  margin-right: 10px;
+}
+
+.column-cell {
+  height: 18px;
+  align-items: center;
+}
+

@@ -1,0 +1,87 @@
+::-webkit-scrollbar {
+  display:none;
+}
+
+.app {
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.patient-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrap {
+  display: flex;
+  width: 1450px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+}
+
+.nav-list li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ccc;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+  color: #007bff;
+}
+
+.nav-list li a.active::before {
+  opacity: 1;
+  background-color: #007bff;
+}
+
+.main {
+  flex: 4;
+  padding: 18px;
+  overflow-y: scroll; /* 允許垂直滾動 */
+}
+
+.breadcrumb {
+  height: 30px;
+}
+
+.heading {
+  margin-top: 5px; /* 往上移動h2元素 */
+}
